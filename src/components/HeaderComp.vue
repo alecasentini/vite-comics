@@ -95,7 +95,7 @@ header {
 
             li {
                 list-style-type: none;
-                margin: 0 15px;
+                margin: 0 10px;
                 height: 100%;
                 display: flex;
                 align-items: center;
