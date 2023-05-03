@@ -62,8 +62,9 @@ export default {
 
 <template>
     <header>
-        <img src="../assets/img/dc-logo.png" alt=" DC Logo">
+
         <nav>
+            <img src="../assets/img/dc-logo.png" alt=" DC Logo">
             <ul>
                 <li v-for="(elem, index) in menuLinks" :key="index">
                     <a :class="elem.current ? 'active' : ''" :href="elem.url">{{ elem.nome }}</a>
@@ -73,4 +74,58 @@ export default {
     </header>
 </template>
 
-<style></style>
+<style lang="scss">
+header {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        ul {
+            display: flex;
+            height: 100%;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                margin: 0 15px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 15px;
+                    text-transform: uppercase;
+                    font-weight: bolder;
+                    height: 100%;
+                    align-items: center;
+                    display: flex;
+
+                    &:hover {
+                        border-bottom: 5px solid #0282f9;
+                        color: #0282f9;
+                    }
+
+                }
+
+
+            }
+        }
+    }
+}
+
+.active {
+    border-bottom: 5px solid #0282f9;
+    color: #0282f9;
+
+}
+</style>

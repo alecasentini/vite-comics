@@ -13,4 +13,6 @@ export default {
     <HeaderComp />
 </template>
 
-<style></style>
+<style lang="scss">
+@use "./style/main.scss" as *;
+</style>
