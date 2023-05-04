@@ -1,10 +1,12 @@
 <script>
 import JumbotronComp from './JumbotronComp.vue'
+import CurrentSeriesComp from './CurrentSeriesComp.Vue';
 export default {
     name: "MainComp",
 
     components: {
-        JumbotronComp
+        JumbotronComp,
+        CurrentSeriesComp
     },
 
     data() {
@@ -47,7 +49,7 @@ export default {
         <JumbotronComp />
         <div class="top">
             <div>
-                <h2>Contents go here</h2>
+                <!-- <CurrentSeriesComp /> -->
             </div>
         </div>
         <div class="bottom">

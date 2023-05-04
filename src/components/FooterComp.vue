@@ -167,7 +167,7 @@ footer {
                         list-style-type: none;
 
                         img {
-                            margin: 0 5px;
+                            margin: 0 10px;
 
                             &:hover {
                                 filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
