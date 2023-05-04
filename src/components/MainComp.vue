@@ -7,28 +7,28 @@ export default {
                 {
                     nome: 'digital comics',
                     url: '/digital-comics',
-                    image: '../assets/img/buy-comics-digital-comics.png'
+                    image: '/src/assets/img/buy-comics-digital-comics.png'
                 },
                 {
                     nome: 'dc merchandise',
                     url: '/dc-merchandise',
-                    image: '../assets/img/buy-comics-merchandise.png'
+                    image: '/src/assets/img/buy-comics-merchandise.png'
 
                 },
                 {
                     nome: 'subscription',
                     url: '/subscription',
-                    image: '../assets/img/buy-comics-subscription.png'
+                    image: '/src/assets/img/buy-comics-subscriptions.png'
                 },
                 {
                     nome: 'comic shop locator',
                     url: '/comic-shop-locator',
-                    image: '../assets/img/buy-comics-shop-locator.png'
+                    image: '/src/assets/img/buy-comics-shop-locator.png'
                 },
                 {
                     nome: 'dc power visa',
                     url: '/dc-power-visa',
-                    image: '../assets/img/buy-dc-power-visa.svg'
+                    image: '/src/assets/img/buy-dc-power-visa.svg'
                 },
             ]
         }
@@ -51,7 +51,6 @@ export default {
                         <a :href="elem.url">{{ elem.nome }}</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </main>
@@ -85,13 +84,12 @@ main {
 
         div {
             width: 80%;
-            display: flex;
-            align-items: center;
 
             ul {
                 display: flex;
                 height: 100%;
                 align-items: center;
+                justify-content: space-between;
 
                 li {
                     list-style-type: none;
@@ -108,7 +106,10 @@ main {
                         height: 100%;
                         align-items: center;
                         display: flex;
+                    }
 
+                    img {
+                        height: 50px;
                     }
                 }
             }
