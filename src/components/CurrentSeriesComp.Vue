@@ -89,7 +89,8 @@ export default {
 </script>
 
 <template>
-    <CardComp />
+    <CardComp v-for="(elem, index) in series" :key="index" :img="elem.thumb" :price="elem.price" :series="elem.series"
+        :type="elem.type" />
 </template>
 
 <style lang="scss"></style>

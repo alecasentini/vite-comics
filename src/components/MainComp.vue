@@ -48,13 +48,14 @@ export default {
     <main>
         <JumbotronComp />
         <div class="top">
-            <div>
-                <!-- <CurrentSeriesComp /> -->
+            <div id="current-series">
+                <CurrentSeriesComp />
             </div>
         </div>
         <div class="bottom">
             <div>
                 <ul>
+
                     <li v-for="(elem, index) in menuLinks" :key="index">
                         <img :src="elem.image" :alt="elem.nome">
                         <a :href="elem.url">{{ elem.nome }}</a>
@@ -68,15 +69,17 @@ export default {
 main {
     .top {
         background-color: #1c1c1c;
-        height: 150px;
         width: 100%;
         display: flex;
         justify-content: center;
 
-        div {
+        #current-series {
             width: 80%;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
+            padding: 30px 0;
+            justify-content: space-between;
 
             h2 {
                 color: white;
