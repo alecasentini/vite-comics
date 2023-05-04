@@ -100,13 +100,14 @@ footer {
 
                 h3 {
                     text-transform: uppercase;
-                    padding: 20px 0;
+                    padding: 20px 0 15px 0;
                 }
 
                 ul {
                     li {
                         list-style-type: none;
-                        margin-top: 3px;
+                        margin-top: 1.5px;
+                        margin-bottom: 1.5px;
 
                         a {
                             text-decoration: none;

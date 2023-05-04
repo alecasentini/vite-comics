@@ -34,12 +34,13 @@ export default {
     width: calc(100% / 6 - 10px);
     aspect-ratio: 1;
     padding: 10px;
+    margin-top: 50px;
 
     .flip-card-inner {
         position: relative;
         width: 100%;
         height: 100%;
-        transition: transform 0.8s;
+        transition: transform 1s;
         transform-style: preserve-3d;
 
         &:hover {
@@ -70,11 +71,15 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0282f9;
+    background-image: url(../assets/img/footer-bg.jpg);
 
     p {
         text-align: center;
         margin: 5px 0;
+
+        &:first-child {
+            font-weight: bold;
+        }
     }
 }
 </style>

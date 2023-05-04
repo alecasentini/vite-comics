@@ -52,6 +52,7 @@ export default {
                 <span>current series</span>
                 <CurrentSeriesComp />
             </div>
+            <div id="more">load more</div>
         </div>
         <div class="bottom">
             <div>
@@ -72,7 +73,8 @@ main {
         background-color: #1c1c1c;
         width: 100%;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         #current-series {
             width: 80%;
@@ -87,11 +89,27 @@ main {
                 color: white;
                 position: absolute;
                 background-color: #0282f9;
-                padding: 10px 20px;
-                top: -20px;
+                padding: 15px 30px;
+                top: -35px;
                 text-transform: uppercase;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 25px;
+                line-height: 40px;
+            }
+
+
+        }
+
+        #more {
+            margin: 20px auto;
+            padding: 10px 50px;
+            color: white;
+            background-color: #0282f9;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
@@ -130,7 +148,10 @@ main {
                     }
 
                     img {
-                        height: 50px;
+                        min-height: 50px;
+                        max-height: 70px;
+                        min-width: 50px;
+                        max-width: 70px;
                     }
                 }
             }
