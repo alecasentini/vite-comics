@@ -49,6 +49,7 @@ export default {
         <JumbotronComp />
         <div class="top">
             <div id="current-series">
+                <span>current series</span>
                 <CurrentSeriesComp />
             </div>
         </div>
@@ -78,11 +79,19 @@ main {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            padding: 30px 0;
+            padding: 40px 0;
             justify-content: space-between;
+            position: relative;
 
-            h2 {
+            span {
                 color: white;
+                position: absolute;
+                background-color: #0282f9;
+                padding: 10px 20px;
+                top: -20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 20px;
             }
         }
     }
