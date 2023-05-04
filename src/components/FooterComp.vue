@@ -61,7 +61,7 @@ export default {
 
         <div id="socials">
             <div class="container">
-                <button>sign-up now!</button>
+                <span class="btn">sign-up now!</span>
 
                 <div>
                     <span>follow us</span>
@@ -124,16 +124,58 @@ footer {
     }
 
     #socials {
+        width: 100%;
+        background-color: #303030;
+        padding: 20px 0;
+
         .container {
             width: 80%;
-            background-color: #797979;
             margin: 0 auto;
             display: flex;
+            justify-content: space-between;
 
-            button {
+            .btn {
                 padding: 10px;
                 border: 2px solid #0282f9;
-                background-color: transparent;
+                text-transform: uppercase;
+                color: white;
+                background-color: #303030;
+                font-weight: bolder;
+
+                &:hover {
+                    background-color: #0282f9;
+                    cursor: pointer;
+                }
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+
+                span {
+                    text-transform: uppercase;
+                    color: #0282f9;
+                    font-weight: bolder;
+                    margin-right: 10px;
+                }
+
+                ul {
+
+                    display: flex;
+
+                    li {
+                        list-style-type: none;
+
+                        img {
+                            margin: 0 5px;
+
+                            &:hover {
+                                filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+                            }
+
+                        }
+                    }
+                }
             }
         }
     }
