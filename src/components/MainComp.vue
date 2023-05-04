@@ -1,6 +1,12 @@
 <script>
+import JumbotronComp from './JumbotronComp.vue'
 export default {
     name: "MainComp",
+
+    components: {
+        JumbotronComp
+    },
+
     data() {
         return {
             menuLinks: [
@@ -38,6 +44,7 @@ export default {
 </script>
 <template>
     <main>
+        <JumbotronComp />
         <div class="top">
             <div>
                 <h2>Contents go here</h2>
