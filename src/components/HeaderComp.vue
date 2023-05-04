@@ -90,23 +90,20 @@ header {
 
         ul {
             display: flex;
-            height: 100%;
             align-items: center;
 
             li {
                 list-style-type: none;
                 margin: 0 10px;
-                height: 100%;
+                line-height: 145px;
                 display: flex;
                 align-items: center;
 
                 a {
                     text-decoration: none;
                     color: black;
-                    padding: 15px;
                     text-transform: uppercase;
                     font-weight: bolder;
-                    height: 100%;
                     align-items: center;
                     display: flex;
 
